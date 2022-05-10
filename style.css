@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --fundoBranco: #e9ebde;
+  --fundoDark: #202020;
+}
+
+body {
+  background-color: var(--fundoBranco);
+  color: #000;
+  overflow-x: hidden;
+}
+
+body.dark-theme {
+  background-color: var(--fundoDark);
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  padding: 50px;
+  
+}
+
+.logo h1 {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.icones i {
+  font-size: 30px;
+  margin: 0 6px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #232323;
+  transition: 540ms;
+}
+
+.icones button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.ps4:hover {
+  border-radius: 100%;
+  background-color: #097de7;
+  color: #fff;
+  transition: 540ms;
+}
+
+.steam:hover {
+  border-radius: 100%;
+  background-color: #0f1f4c;
+  color: #fff;
+  transition: 540ms;
+}
+
+.btn-dark:hover {
+  border-radius: 100%;
+  background-color: rgba(250, 203, 74, 0.822);
+  color: #fff;
+}
+
+/* Seção Principal */
+.container-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-one {
+  width: 600px;
+}
+
+.container-one h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container-one p {
+  font-size: 17px;
+  margin: 15px auto;
+}
+
+.container-one .btn-acessar {
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 7px 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: red;
+  cursor: pointer;
+}
+
+.btn-acessar:hover, .btn-comprar:hover{
+  background-color: rgb(126, 16, 16);
+}
+
+.btn-comprar{
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 7px 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: red;
+  cursor: pointer;
+}
+
+.container-two > img {
+  height: 700px;
+}
+ 
+/*** ajeitar as imgs ***/
+.imagem01{
+  display: none;
+}
+
+.imagem02{
+  display: none;
+}
+
+.imagem01.show-img1{
+  display: block;
+}
+
+.imagem02.show-img2{
+  display: block;
+}
